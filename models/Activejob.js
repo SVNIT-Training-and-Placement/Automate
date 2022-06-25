@@ -19,11 +19,44 @@ const ActivejobsSchema = new mongoose.Schema({
     type: String,
   },
   responses: [
+    //add the fields of students here
+
     {
-      //add the fields of students here
       user: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'user',
+      },
+
+      name: {
+        type: String,
+      },
+
+      admno: {
+        type: String,
+      },
+
+      email: {
+        type: String,
+      },
+
+      phoneno: {
+        type: String,
+      },
+
+      gender: {
+        type: String,
+      },
+
+      dept: {
+        type: String,
+      },
+
+      passout: {
+        type: String,
+      },
+
+      percentage10: {
+        type: String,
       },
     },
   ],
